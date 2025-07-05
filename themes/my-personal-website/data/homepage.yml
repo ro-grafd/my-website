@@ -1,0 +1,201 @@
+# homepage
+homepage:
+  head:
+    title: "Home | Raditian"
+# showcase
+showcase:
+  enable: true
+  title: "Hello, I’m Rohit."
+  subtitle: "Software Engineer"
+  description: "I'm currently pursuing a Master of Science in Computer Science while bringing 3+ years of experience as a Software Engineer. I’m passionate about building efficient, scalable systems and continuously growing as a developer. Keep building, stay curious. Check out my work on GitHub."
+  image:
+    alt: "Showcase keyboard and mouse image"
+    x: "img/showcase/pic1@1x.png"
+    _2x: "img/showcase/pic1@2x.png"
+  imageMobile:
+    alt: "Showcase keyboard and mouse image"
+    x: "img/showcase/pic1-mobile.jpg"
+
+  # button:
+  #   icon: "icon-mail-fill"
+  #   btnText: "Contact"
+  #   URL: "https://radity.com/en/contact/"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/rohit-bhagatkar-2301621ba/"
+
+    - icon: "github"
+      URL: "https://github.com/ro-grafd"
+
+    # - text: "LC"
+    #   URL: "https://leetcode.com/u/rohitbhagatkar940/"
+
+    # - text: "CF"
+    #   URL: "https://codeforces.com/profile/ASSaASSin"
+
+    # - icon: "behance"
+    #   URL: "https://www.behance.net/radity-digital"
+
+    # - icon: "youtube"
+    #   URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
+
+    # - icon: "instagram"
+    #   URL: "https://www.instagram.com/teamradity/"
+
+    # - icon: "facebook"
+    #   URL: "https://www.facebook.com/raditycom/"
+
+    # - icon: "codepen"
+    #   URL: "#"
+
+    # - icon: "yelp"
+    #   URL: "https://www.yelp.com/"
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: '<p class="lead">
+    I am back, after a few days of vacationing with family. Weather was awesome, the beach was
+    full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as
+    good for all of you.
+    </p>
+    <p class="lead">
+    My area of focus lies in designing web and mobile products, user research as well as
+    leading of design & front-end teams. I enjoy designing and coding the UI as much as
+    talking with users to iterate and improve the experiences that reach business goals.
+    </p>'
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/in/rohit-bhagatkar-2301621ba/"
+  image:
+    x: "img/who-am-i/rohit-picture.png"
+    _2x: "img/who-am-i/rohit-picture@2x.png"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "University of Bristol"
+      year: "2024-2025"
+      degree: "Master of Science (MSc), Computer Science"
+
+    - university: "Indian Institute of Technology Hyderabad (IIT-H)"
+      year: "2017-2021"
+      degree: "Bachelor of Technology, Chemical Engineering"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: "Computer Science professional with 3+ years of industry experience and a strong foundation in C++, backend systems, and scalable solutions. I build and optimize software to solve real-world problems and enhance user experiences."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/rohit-bhagatkar-2301621ba/"
+  # button2:
+  #   icon: "icon-profile-fill"
+  #   btnText: "Download My Resume"
+  #   URL: "#"
+
+  items:
+    - title: "Software Engineer"
+      company: "Tata Consultancy Services"
+      duration: "July 2021 - Aug 2024"
+
+    # - title: "Sr. Front-End Developer"
+    #   company: "Textic"
+    #   duration: "Apr 2010 - Jan 2011"
+
+    # - title: "Jr. Front-End Developer"
+    #   company: "Cyberse"
+    #   duration: "Jun 2009 - Mar 2010"
+
+# Projects
+projects:
+  title: "Projects"
+  enable: true
+  description: "Here are some of the projects I've worked on that showcase my skills in software development and problem-solving."
+
+  items:
+    - title: "Movie Recommendation Web Application"
+      description: "A full-stack movie recommendation web application built with modern web technologies. Features include user authentication, dynamic movie catalog, user reviews, and personalized recommendations based on user preferences."
+      technologies: ["React", "Java", "Spring-Boot", "MongoDB", "Postman", "Rest API"]
+      github_url: "https://github.com/ro-grafd/Movie-Web-Application"
+      # demo_url: "https://your-ecommerce-demo.com"
+      image:
+        x: "img/works/pic1.jpg"
+        _2x: "img/works/pic1@2x.jpg"
+      is_even: true
+
+    # - title: "Task Management System"
+    #   description: "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities."
+    #   technologies: ["Vue.js", "Python", "Django", "PostgreSQL", "WebSocket"]
+    #   github_url: "https://github.com/your-username/task-manager"
+    #   demo_url: "https://your-task-manager-demo.com"
+    #   image:
+    #     x: "img/works/swissfintech.jpg"
+    #     _2x: "img/works/swissfintech@2x.jpg"
+    #   is_even: false
+
+    # - title: "Data Analytics Dashboard"
+    #   description: "An interactive dashboard for visualizing complex data sets with real-time analytics, custom reporting, and machine learning insights."
+    #   technologies: ["React", "D3.js", "Python", "Flask", "Pandas", "scikit-learn"]
+    #   github_url: "https://github.com/your-username/analytics-dashboard"
+    #   demo_url: "https://your-analytics-demo.com"
+    #   image:
+    #     x: "img/works/robo-advisor.jpg"
+    #     _2x: "img/works/robo-advisor@2x.jpg"
+    #   is_even: true
+
+# testimonial
+testimonial:
+  enable: true
+  title: "Testimonials"
+  items:
+    - name: "Daniel Jordan"
+      position: "Phonet, CEO"
+      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image:
+        x: "img/testimonials/daniel-jordan.jpg"
+        _2x: "img/testimonials/daniel-jordan@2x.jpg"
+
+    - name: "Jonathan Peters"
+      position: "Textic, CEO"
+      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image:
+        x: "img/testimonials/jonathan-peters.jpg"
+        _2x: "img/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Antonio Willis"
+      position: "Cyberse, CEO"
+      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image:
+        x: "img/testimonials/antonio-willis.jpg"
+        _2x: "img/testimonials/antonio-willis@2x.jpg"
+
+# contact
+# contact:
+#   enable: true
+#   title: "Contact"
+#   phone:
+#     title: "Phone Number"
+#     number: "+41 7741097133"
+#   email:
+#     title: "Email"
+#     email: '<a href="mailto:rohitbhagatkar940@gmail.com">rohitbhagatkar940@gmail.com</a>'
+#   address:
+#     title: "Address"
+#     address: "4 Lamb Street, St Jude's, Bristol, United Kingdom"
+  
+
+# newsletter
+newsletter:
+  enable: true
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."

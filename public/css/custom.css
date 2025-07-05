@@ -1,0 +1,19 @@
+/* You can customize theme styles here */
+
+/* Social text links styling */
+.social-text {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+.platform-links a:hover .social-text {
+    background-color: currentColor;
+    color: #fff;
+}

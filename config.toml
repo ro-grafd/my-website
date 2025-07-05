@@ -1,0 +1,68 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+theme = "my-personal-website"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "About Me"
+  URL = "#about"
+  weight = 2
+
+  [[menu.header]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 3
+
+  [[menu.header]]
+  name = "Projects"
+  URL = "#projects"
+  weight = 4
+
+
+  [[menu.footer]]
+  name = "About Me"
+  URL = "#about"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Projects"
+  URL = "#projects"
+  weight = 4
+
+
+[params]
+
+  sections = ["showcase", "about", "education", "experience", "projects", "contact"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.logo]
+    text1 = "Rohit"
+    text2 = "Bhagatkar"

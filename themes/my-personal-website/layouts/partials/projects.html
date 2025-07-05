@@ -1,0 +1,96 @@
+{{ if .Site.Data.homepage.projects.enable }}
+<section id="projects" class="section section--border-bottom">
+  <div class="container">
+    <h2 class="rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.projects.title }}
+    </h2>
+    {{ if .Site.Data.homepage.projects.description }}
+    <p class="lead text-center rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.projects.description }}
+    </p>
+    {{ end }}
+    
+    {{ range $index, $element := .Site.Data.homepage.projects.items }}
+    <div
+      class="row row--padded rad-animation-group rad-fade-down {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
+    >
+      {{ if .is_even }}
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>{{ .title }}</h3>
+        <p class="lead">
+          {{ .description }}
+        </p>
+        {{ if .technologies }}
+        <div class="mb-3">
+          <strong>Technologies:</strong>
+          {{ range $i, $tech := .technologies }}
+            {{ if $i }}, {{ end }}
+            <span class="badge badge-secondary">{{ $tech }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div>
+          {{ if .github_url }}
+          <a href="{{ .github_url }}" class="btn btn-outline-primary mr-2" target="_blank">
+            <i class="icon-github-fill"></i> View Code
+          </a>
+          {{ end }}
+          {{ if .demo_url }}
+          <a href="{{ .demo_url }}" class="btn btn-primary" target="_blank">
+            <i class="icon-external-link-fill"></i> Live Demo
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .image.x | absURL }}"
+          data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
+          alt="{{ .title }}"
+        />
+      </div>
+      {{ else }}
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .image.x | absURL }}"
+          data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
+          alt="{{ .title }}"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>{{ .title }}</h3>
+        <p class="lead">
+          {{ .description }}
+        </p>
+        {{ if .technologies }}
+        <div class="mb-3">
+          <strong>Technologies:</strong>
+          {{ range $i, $tech := .technologies }}
+            {{ if $i }}, {{ end }}
+            <span class="badge badge-secondary">{{ $tech }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        <div>
+          {{ if .github_url }}
+          <a href="{{ .github_url }}" class="btn btn-outline-primary mr-2" target="_blank">
+            <i class="icon-github-fill"></i> View Code
+          </a>
+          {{ end }}
+          {{ if .demo_url }}
+          <a href="{{ .demo_url }}" class="btn btn-primary" target="_blank">
+            <i class="icon-external-link-fill"></i> Live Demo
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
